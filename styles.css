@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+label:not([for^='playing-']):not([for^='level-']):not([for^='not-']):not([for^='receive-']):not([for^='privacy-']) {
+    display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+input[type='radio'] + label {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+}
+
+.checkbox-group div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type='checkbox'] + label {
+    display: inline-block;
+    margin: 0;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
