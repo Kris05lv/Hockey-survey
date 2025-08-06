@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hockey Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1 id="title">Hockey Survey</h1> 
+   <p id="description">This survey is to collect data on if hockey players continue playing after high school</p>
+   <form id="survey-form">
+    <section>
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    </section>
+    <section>
+    <label for="number" id="number-label"> Please select your age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="18" max="120" required>
+    <label>Have you still been playing hockey after highschool?</label>
+    <div class="radio-group">
+        <input type="radio" id="playing-yes" name="still-playing" value="yes">
+        <label for="playing-yes">Yes</label>
+        <input type="radio" id="playing-no" name="still-playing" value="no">
+        <label for="playing-no">No</label>
+    </div>
+    </section>
+    <section>
+    <label>What level of hockey do you currently play?</label>
+    <div class="radio-group">
+        <input type="radio" id="level-recreational" name="hockey-level" value="recreational">
+        <label for="level-recreational">Recreational</label>
+        <input type="radio" id="level-professional" name="hockey-level" value="professional">
+        <label for="level-professional">Professional</label>
+        <input type="radio" id="not-playing" name="hockey-level" value="not-playing">
+        <label for="not-playing">Not playing</label>
+    </div>
+    <textarea id="textarea" name="textarea" placeholder="There isn't a club in my area">If you are not playing, please explain why</textarea>
+    <label for="dropdown">Please indicate your current occupation:</label>
+    <select id="dropdown" name="dropdown">
+        <option value="option1">Please select an option</option>
+        <option value="option2">University</option>
+        <option value="option3">Work</option>
+        <option value="option4">Other</option>
+    </select>
+    </section>
+    <section>
+    <div class="checkbox-group">
+        <div>
+            <input type="checkbox" id="receive-emails" name="receive-emails" value="receive-emails">
+            <label for="receive-emails">I would like to receive emails</label>
+        </div>
+        <div>
+            <input type="checkbox" id="privacy-policy" name="privacy-policy" value="privacy-policy">
+            <label for="privacy-policy">I consent to the <a href="privacy-policy.html">privacy policy</a></label>
+        </div>
+    </div>
+    <input type="submit" id="submit" value="Submit">
+    </section>
+   </form>
+</body>
+</html>
